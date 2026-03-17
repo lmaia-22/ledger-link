@@ -83,35 +83,35 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SAGE-01 | — | Pending |
-| SAGE-02 | — | Pending |
-| SAGE-03 | — | Pending |
-| SAGE-04 | — | Pending |
-| BANK-01 | — | Pending |
-| BANK-02 | — | Pending |
-| BANK-03 | — | Pending |
-| DOC-01 | — | Pending |
-| DOC-02 | — | Pending |
-| DOC-03 | — | Pending |
-| DOC-04 | — | Pending |
-| REC-01 | — | Pending |
-| REC-02 | — | Pending |
-| REC-03 | — | Pending |
-| REC-04 | — | Pending |
-| FLOW-01 | — | Pending |
-| FLOW-02 | — | Pending |
-| FLOW-03 | — | Pending |
-| FLOW-04 | — | Pending |
-| DASH-01 | — | Pending |
-| DASH-02 | — | Pending |
-| DASH-03 | — | Pending |
-| DASH-04 | — | Pending |
+| SAGE-01 | Phase 1 | Pending |
+| SAGE-02 | Phase 1 | Pending |
+| SAGE-04 | Phase 1 | Pending |
+| DASH-01 | Phase 1 | Pending |
+| BANK-01 | Phase 2 | Pending |
+| BANK-02 | Phase 2 | Pending |
+| BANK-03 | Phase 2 | Pending |
+| REC-01 | Phase 2 | Pending |
+| REC-02 | Phase 2 | Pending |
+| REC-03 | Phase 2 | Pending |
+| REC-04 | Phase 2 | Pending |
+| SAGE-03 | Phase 3 | Pending |
+| FLOW-01 | Phase 3 | Pending |
+| FLOW-02 | Phase 3 | Pending |
+| FLOW-03 | Phase 3 | Pending |
+| FLOW-04 | Phase 3 | Pending |
+| DOC-01 | Phase 4 | Pending |
+| DOC-02 | Phase 4 | Pending |
+| DOC-03 | Phase 4 | Pending |
+| DOC-04 | Phase 4 | Pending |
+| DASH-02 | Phase 5 | Pending |
+| DASH-03 | Phase 5 | Pending |
+| DASH-04 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 23 total
-- Mapped to phases: 0
-- Unmapped: 23 ⚠️
+- Mapped to phases: 23
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-03-17*
-*Last updated: 2026-03-17 after initial definition*
+*Last updated: 2026-03-17 — phase traceability added*
