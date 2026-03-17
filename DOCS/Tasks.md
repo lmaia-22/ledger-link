@@ -6,7 +6,8 @@ A browser-based reconciliation tool that automates cross-referencing of invoices
 
 ## Core Value
 
-Accountants can import a bank statement and instantly see which transactions match Sage entries and which need attention — eliminating the manual hunt through Sage for every line item.
+Share Word document with him!
+https://dbdiagram.io/d
 
 ## Requirements
 
