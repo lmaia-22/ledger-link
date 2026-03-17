@@ -52,11 +52,11 @@ Exceptions: Touch targets for collapse toggle button minimum 44px (accessibility
 | Role | Size | Weight | Line Height |
 |------|------|--------|-------------|
 | Body | 14px | 400 (regular) | 1.5 |
-| Label | 12px | 500 (medium) | 1.4 |
+| Label | 12px | 400 (regular) | 1.4 |
 | Heading | 20px | 600 (semibold) | 1.2 |
 | Display | 28px | 600 (semibold) | 1.2 |
 
-> Rationale: Professional data-dense tool (Linear/Notion aesthetic per CONTEXT.md). 14px body maximises table row density for transaction lists. 12px labels for table headers and sidebar nav items. Two weights only (400 and 600 — medium 500 for labels only as a label-specific exception within the 2-weight system).
+> Rationale: Professional data-dense tool (Linear/Notion aesthetic per CONTEXT.md). 14px body maximises table row density for transaction lists. 12px labels for table headers and sidebar nav items. Two weights only: 400 (regular) for body and labels, 600 (semibold) for headings and display.
 
 Font family: `Inter, ui-sans-serif, system-ui, -apple-system, sans-serif`
 
@@ -113,7 +113,8 @@ All copy is in Portuguese (PT-PT) per CONTEXT.md locked decision.
 | Error state body | "Ocorreu um erro ao ligar ao Sage. Verifique se o Sage está aberto e tente novamente." |
 | Error expandable toggle label | "Detalhes" |
 | Loading state (skeleton) | No text — animated skeleton rows only |
-| Table: no results after filter | "Nenhum resultado encontrado" |
+| Table: filter empty state heading | "Sem resultados" |
+| Table: filter empty state body | "Nenhum resultado corresponde aos filtros aplicados. Tente ajustar a pesquisa ou o período seleccionado." |
 | Search placeholder | "Pesquisar referência ou descrição…" |
 | Date filter placeholder | "Seleccionar período" |
 | Page size indicator | "50 por página" |
@@ -146,6 +147,8 @@ Components needed for Phase 1 (shadcn/ui official registry only):
 ---
 
 ## Layout Contract
+
+**Primary focal point:** transactions data table — commands 70%+ of viewport; sidebar serves as secondary navigation anchor.
 
 ### App Shell
 
