@@ -30,7 +30,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The server can switch between two different Sage company datasets and return distinct data for each
   4. The HTTP server remains responsive during an SDO read operation (COM calls do not block the event loop)
   5. Integer-pence convention is enforced in the database schema and all amounts read from Sage are stored as integers
-**Plans**: TBD
+**Plans:** 4 plans
+Plans:
+- [ ] 01-01-PLAN.md — Project scaffold, types, DB schema, Vitest setup
+- [ ] 01-02-PLAN.md — Sage COM bridge + Fastify server + API routes
+- [ ] 01-03-PLAN.md — React SPA scaffold + shadcn/ui + sidebar app shell
+- [ ] 01-04-PLAN.md — Transactions table + filters + pagination + full integration
 
 ### Phase 2: Bank Import and Matching Engine
 **Goal**: Accountants can import bank statements in CSV and OFX formats, and the matching engine produces categorised match results (exact, approximate, no match) against Sage entries
@@ -84,7 +89,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation and Sage Bridge | 0/TBD | Not started | - |
+| 1. Foundation and Sage Bridge | 0/4 | Planned | - |
 | 2. Bank Import and Matching Engine | 0/TBD | Not started | - |
 | 3. Match Review UI and Reconciliation Write-Back | 0/TBD | Not started | - |
 | 4. OCR Document Pipeline | 0/TBD | Not started | - |
