@@ -1,8 +1,8 @@
-# Ledger Link
+# Project Tasks
 
 ## What This Is
 
-A browser-based reconciliation tool that automates cross-referencing of invoices, receipts, and bank statements against entries in Sage for Accountants (desktop, LAN-hosted). It consists of two main modules: **Ledger Link** (management interface with dashboard, reconciliation UI, and document archive) and **DOC·SCAN** (ingestion engine that extracts structured data from uploaded documents via a local vision model). It runs on a LAN alongside Sage, serving Portuguese accountants who currently spend hours manually hunting for mismatches.
+A browser-based reconciliation tool that automates cross-referencing of invoices, receipts, and bank statements against entries in Sage for Accountants (desktop, LAN-hosted). It consists of two main modules: **Ledger Link** (management interface with dashboard, reconciliation UI, and document archive) and **DOC·SCAN** 
 
 ## Core Value
 
@@ -17,19 +17,44 @@ https://dbdiagram.io/d
 
 ### Active
 
-- [ ] Connect to Sage 50 via official .NET/Interops SDK and read/write transactions
-- [ ] Import bank statements (CSV/OFX) and extract transaction data
-- [ ] Upload invoices and receipts (PDF, images) and extract structured data via local vision model (DOC·SCAN)
-- [ ] Extract Portuguese-specific fields: emitente, NIF, IBAN, IVA, totals, invoice lines, bank movements
-- [ ] Reconciliation engine with strict matching: exact (to the cent), approximate (≤2%), no match (>2%)
-- [ ] Display match suggestions for accountant review and confirmation
-- [ ] Mark confirmed matches as reconciled in Sage via SDK
-- [ ] Flag unmatched items for manual review with a "needs attention" list
-- [ ] Support multiple Sage company datasets (up to ~10 per firm)
-- [ ] Browser-based UI with KPI dashboard, document archive, and visual reconciliation interface
-- [ ] Audit trail logging every confirm/reject action with timestamp
+- [ ] Pedir Glossário
+- [ ] Pedir PDF fatura exemplo e Pedir output real fatura para comparar com testes 
+- [ ] Pedir demos e acessos (caso existam demos e acessos para poder ver a base dados atual e os restantes sistemas e integrações) 
+ 
+Questões Técnicas
+- [ ] Atual arquitetura processo As Is (tools, APIs, ...) 
+- [ ] Licenças dos trabalhadores (Microsoft, Sage, ?) 
+- [ ] Network integration / configuration ? 
+        - [ ] Protocolos comunicação 
+- [ ] Se recebem as faturas por email? Ou apenas na plataforma? 
+        - [ ] Regras para olhar para o tipo de ficheiros e quais os tipos que são aceites 
+- [ ] Aceder ao Sage DB ou À API deles? 
+- [ ] Existe SAGE DB for accountants (portal interno e externo) e também desktop para gestão interna da empresa? 
+- [ ] Sage é web app ou versão desktop? 
+- [ ] Quantas faturas processam por dia? 
+- [ ] Existe base de dados middleware?
+- [ ] Controlar estado faturas Diferentes estados que uma fatura pode ter? E mesmo entre sistemas? 
+- [ ] Qual o campo ou combinação de campos para Primary Key?
 
-### Out of Scope
+- [ ] Documentos guardados na plataforma SAGE tÊm conversão automática para PDF?
+- [ ] É utilizado Arquivo Digital Cloud (Bizdocs)? 
+- [ ] É utilizado e-fatura Connection? 
+- [ ] É utilizado Ambiente Hosted?
+
+- [ ] Regras + glossário e faturas exemplo por tipo ["Fatura","Recibo", "Extrato Bancário] 
+- [ ] Mapeamento campos / glossário dentro dos documentos 
+- [ ] Como são processadas as notas de crédito? 
+
+- [ ] Grau de confiança? (Regras ou notificações associadas abaixo de um determinado valor) 
+- [ ] Intregação com outros sistemas? 
+
+- [ ] Se recebe faturas internacionais? Ou só de Portugal e Angola?
+
+
+- [ ] Pedir workflow com diferentes etapas e sistemas
+
+
+### Out of Scope (To be Defined)
 
 - Auto-creating missing transactions in Sage — v1 is read + reconcile only
 - Cloud hosting or external access — runs entirely on the LAN
