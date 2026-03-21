@@ -41,7 +41,7 @@
 
 ### Dashboard & UI
 
-- [ ] **DASH-01**: Browser-based UI accessible from any machine on the LAN
+- [x] **DASH-01**: Browser-based UI accessible from any machine on the LAN
 - [ ] **DASH-02**: KPI dashboard showing matched count, unmatched count, and reconciliation progress per company
 - [ ] **DASH-03**: Document archive view of all uploaded invoices, receipts, and statements
 - [ ] **DASH-04**: Visual reconciliation interface for the matching workflow
@@ -86,7 +86,7 @@
 | SAGE-01 | Phase 1 | Complete |
 | SAGE-02 | Phase 1 | Complete |
 | SAGE-04 | Phase 1 | Complete |
-| DASH-01 | Phase 1 | Pending |
+| DASH-01 | Phase 1 | Complete |
 | BANK-01 | Phase 2 | Pending |
 | BANK-02 | Phase 2 | Pending |
 | BANK-03 | Phase 2 | Pending |

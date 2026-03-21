@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 01-01-PLAN.md
-last_updated: "2026-03-21T16:19:27.812Z"
+stopped_at: Completed 01-03-PLAN.md
+last_updated: "2026-03-21T16:26:43.289Z"
 progress:
   total_phases: 5
   completed_phases: 0
   total_plans: 4
-  completed_plans: 1
+  completed_plans: 3
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-17)
 ## Current Position
 
 Phase: 01 (Foundation and Sage Bridge) — EXECUTING
-Plan: 2 of 4
+Plan: 4 of 4
 
 ## Performance Metrics
 
@@ -47,6 +47,7 @@ Plan: 2 of 4
 
 *Updated after each plan completion*
 | Phase 01 P01 | 4 | 3 tasks | 21 files |
+| Phase 01 P03 | 5 | 2 tasks | 22 files |
 
 ## Accumulated Context
 
@@ -63,6 +64,9 @@ Recent decisions affecting current work:
 - [Phase 01]: winax excluded from package.json: must be installed manually on Windows deployment machine to avoid breaking npm install on macOS/Linux
 - [Phase 01]: Integer-pence enforced from schema day one: amountPence stored as INTEGER (never REAL), toPence() converts Sage SDO floats at bridge boundary
 - [Phase 01]: NodeNext module resolution: all backend TypeScript imports require .js extensions for ESM compatibility
+- [Phase 01]: Manual components.json for monorepo: shadcn CLI placed files in wrong location; moved to client/src/components/ui/ manually
+- [Phase 01]: Explicit routesDirectory in vite.config.ts: TanStack Router plugin defaulted to project root /src/routes; fixed with absolute path
+- [Phase 01]: Vite root set to __dirname: required for build to find index.html when running with --config flag from project root
 
 ### Pending Todos
 
@@ -76,6 +80,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T16:19:27.809Z
-Stopped at: Completed 01-01-PLAN.md
+Last session: 2026-03-21T16:26:30.926Z
+Stopped at: Completed 01-03-PLAN.md
 Resume file: None
