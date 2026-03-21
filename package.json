@@ -1,0 +1,46 @@
+{
+  "name": "ledger-link",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:server": "tsx watch src/index.ts",
+    "dev:client": "vite --config client/vite.config.ts",
+    "build:client": "vite build --config client/vite.config.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "fastify": "^5",
+    "@fastify/static": "^8",
+    "better-sqlite3": "^11",
+    "drizzle-orm": "^0.40",
+    "zod": "^3",
+    "fastify-type-provider-zod": "^4",
+    "react": "^19",
+    "react-dom": "^19",
+    "@tanstack/react-query": "^5",
+    "@tanstack/react-router": "^1",
+    "@tanstack/react-table": "^8",
+    "lucide-react": "^0.468",
+    "clsx": "^2",
+    "tailwind-merge": "^2"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "vite": "^6",
+    "@vitejs/plugin-react": "^4",
+    "@tanstack/router-plugin": "^1",
+    "drizzle-kit": "^0.30",
+    "@types/better-sqlite3": "^7",
+    "tsx": "^4",
+    "vitest": "^2",
+    "tailwindcss": "^3",
+    "postcss": "^8",
+    "autoprefixer": "^10",
+    "@types/react": "^19",
+    "@types/react-dom": "^19"
+  }
+}
