@@ -12,7 +12,7 @@ Ledger Link is built in five phases that follow the dependency graph of the prob
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation and Sage Bridge** - LAN server scaffold + Sage SDO COM bridge running in isolated child process
+- [x] **Phase 1: Foundation and Sage Bridge** - LAN server scaffold + Sage SDO COM bridge running in isolated child process (completed 2026-03-21)
 - [ ] **Phase 2: Bank Import and Matching Engine** - CSV/OFX import with configurable column mapping + multi-pass matching engine
 - [ ] **Phase 3: Match Review UI and Reconciliation Write-Back** - Side-by-side review workflow + confirmed write-back to Sage + audit trail
 - [ ] **Phase 4: OCR Document Pipeline** - Document upload + async OCR extraction with per-field confidence scores
@@ -30,12 +30,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The server can switch between two different Sage company datasets and return distinct data for each
   4. The HTTP server remains responsive during an SDO read operation (COM calls do not block the event loop)
   5. Integer-pence convention is enforced in the database schema and all amounts read from Sage are stored as integers
-**Plans:** 3/4 plans executed
+**Plans:** 4/4 plans complete
 Plans:
 - [x] 01-01-PLAN.md — Project scaffold, types, DB schema, Vitest setup
 - [x] 01-02-PLAN.md — Sage COM bridge + Fastify server + API routes
 - [x] 01-03-PLAN.md — React SPA scaffold + shadcn/ui + sidebar app shell
-- [ ] 01-04-PLAN.md — Transactions table + filters + pagination + full integration
+- [x] 01-04-PLAN.md — Transactions table + filters + pagination + full integration
 
 ### Phase 2: Bank Import and Matching Engine
 **Goal**: Accountants can import bank statements in CSV and OFX formats, and the matching engine produces categorised match results (exact, approximate, no match) against Sage entries
@@ -89,7 +89,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation and Sage Bridge | 3/4 | In Progress|  |
+| 1. Foundation and Sage Bridge | 4/4 | Complete   | 2026-03-21 |
 | 2. Bank Import and Matching Engine | 0/TBD | Not started | - |
 | 3. Match Review UI and Reconciliation Write-Back | 0/TBD | Not started | - |
 | 4. OCR Document Pipeline | 0/TBD | Not started | - |

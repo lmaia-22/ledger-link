@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 01-02-PLAN.md
-last_updated: "2026-03-21T16:26:58.191Z"
+stopped_at: "Checkpoint: Task 3 human-verify in 01-04-PLAN.md"
+last_updated: "2026-03-21T16:31:42.192Z"
 progress:
   total_phases: 5
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 4
-  completed_plans: 3
+  completed_plans: 4
 ---
 
 # Project State
@@ -49,6 +49,7 @@ Plan: 4 of 4
 | Phase 01 P01 | 4 | 3 tasks | 21 files |
 | Phase 01 P03 | 5 | 2 tasks | 22 files |
 | Phase 01 P02 | 4 | 2 tasks | 9 files |
+| Phase 01 P04 | 3min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -70,6 +71,9 @@ Recent decisions affecting current work:
 - [Phase 01]: Vite root set to __dirname: required for build to find index.html when running with --config flag from project root
 - [Phase 01]: tsx --import flag for forking bridge-host.ts in dev/vitest: detects .ts present and .js absent to avoid requiring a build step during development
 - [Phase 01]: company lookup in transactions route: LIST_COMPANIES called to resolve sagePath before READ_TRANSACTIONS, avoids server-side state
+- [Phase 01]: Sorting indicator uses ArrowUp/ArrowDown/ArrowUpDown (lucide) on clickable button inside TableHead for keyboard accessibility
+- [Phase 01]: placeholderData pattern keeps previous page visible during pagination fetch to avoid skeleton flash
+- [Phase 01]: Filter changes reset page to 1 to prevent empty page display when result count drops
 
 ### Pending Todos
 
@@ -83,6 +87,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T16:26:58.189Z
-Stopped at: Completed 01-02-PLAN.md
+Last session: 2026-03-21T16:31:42.190Z
+Stopped at: Checkpoint: Task 3 human-verify in 01-04-PLAN.md
 Resume file: None
