@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 01-03-PLAN.md
-last_updated: "2026-03-21T16:26:43.289Z"
+stopped_at: Completed 01-02-PLAN.md
+last_updated: "2026-03-21T16:26:58.191Z"
 progress:
   total_phases: 5
   completed_phases: 0
@@ -48,6 +48,7 @@ Plan: 4 of 4
 *Updated after each plan completion*
 | Phase 01 P01 | 4 | 3 tasks | 21 files |
 | Phase 01 P03 | 5 | 2 tasks | 22 files |
+| Phase 01 P02 | 4 | 2 tasks | 9 files |
 
 ## Accumulated Context
 
@@ -67,6 +68,8 @@ Recent decisions affecting current work:
 - [Phase 01]: Manual components.json for monorepo: shadcn CLI placed files in wrong location; moved to client/src/components/ui/ manually
 - [Phase 01]: Explicit routesDirectory in vite.config.ts: TanStack Router plugin defaulted to project root /src/routes; fixed with absolute path
 - [Phase 01]: Vite root set to __dirname: required for build to find index.html when running with --config flag from project root
+- [Phase 01]: tsx --import flag for forking bridge-host.ts in dev/vitest: detects .ts present and .js absent to avoid requiring a build step during development
+- [Phase 01]: company lookup in transactions route: LIST_COMPANIES called to resolve sagePath before READ_TRANSACTIONS, avoids server-side state
 
 ### Pending Todos
 
@@ -80,6 +83,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T16:26:30.926Z
-Stopped at: Completed 01-03-PLAN.md
+Last session: 2026-03-21T16:26:58.189Z
+Stopped at: Completed 01-02-PLAN.md
 Resume file: None
