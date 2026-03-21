@@ -19,7 +19,7 @@ const IS_WINDOWS = process.platform === 'win32';
 
 /**
  * Detects the installed Sage 50 SDO ProgID from the Windows registry.
- * Returns something like "SDOEngine.32" — never hard-coded.
+ * Returns something like "SDOEngine.XX" (where XX is the version) — never hard-coded.
  * Throws if Sage SDO is not found.
  */
 function detectSageProgId(): string {
