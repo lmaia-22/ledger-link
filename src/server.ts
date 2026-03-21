@@ -21,7 +21,7 @@ export async function createApp(opts?: { serve_static?: boolean }): Promise<Retu
 
   // Serve Vite build output in production
   if (opts?.serve_static !== false) {
-    const distPath = path.join(import.meta.dirname, '../../client/dist');
+    const distPath = path.join(import.meta.dirname, '../client/dist');
     try {
       await app.register(staticPlugin, {
         root: distPath,
