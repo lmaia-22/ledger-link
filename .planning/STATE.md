@@ -1,3 +1,17 @@
+---
+gsd_state_version: 1.0
+milestone: v1.0
+milestone_name: milestone
+status: unknown
+stopped_at: "Checkpoint: Task 3 human-verify in 01-04-PLAN.md"
+last_updated: "2026-03-21T16:31:42.192Z"
+progress:
+  total_phases: 5
+  completed_phases: 1
+  total_plans: 4
+  completed_plans: 4
+---
+
 # Project State
 
 ## Project Reference
@@ -5,20 +19,17 @@
 See: .planning/PROJECT.md (updated 2026-03-17)
 
 **Core value:** Accountants can import a bank statement and instantly see which transactions match Sage entries and which need attention
-**Current focus:** Phase 1 — Foundation and Sage Bridge
+**Current focus:** Phase 01 — Foundation and Sage Bridge
 
 ## Current Position
 
-Phase: 1 of 5 (Foundation and Sage Bridge)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-03-17 — Roadmap created, requirements mapped to 5 phases
-
-Progress: [░░░░░░░░░░] 0%
+Phase: 01 (Foundation and Sage Bridge) — EXECUTING
+Plan: 4 of 4
 
 ## Performance Metrics
 
 **Velocity:**
+
 - Total plans completed: 0
 - Average duration: —
 - Total execution time: 0 hours
@@ -30,10 +41,15 @@ Progress: [░░░░░░░░░░] 0%
 | - | - | - | - |
 
 **Recent Trend:**
+
 - Last 5 plans: —
 - Trend: —
 
 *Updated after each plan completion*
+| Phase 01 P01 | 4 | 3 tasks | 21 files |
+| Phase 01 P03 | 5 | 2 tasks | 22 files |
+| Phase 01 P02 | 4 | 2 tasks | 9 files |
+| Phase 01 P04 | 3min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -47,6 +63,17 @@ Recent decisions affecting current work:
 - Phase 1: SDO connections must open-per-operation and close immediately — persistent connections consume Sage licence slots
 - Phase 1: Sage SDO DLL ProgID must be selected from registry at startup — hard-coding breaks on Sage upgrades
 - Phase 3: Match review UI and write-back must ship together — write-back without review is a safety violation
+- [Phase 01]: winax excluded from package.json: must be installed manually on Windows deployment machine to avoid breaking npm install on macOS/Linux
+- [Phase 01]: Integer-pence enforced from schema day one: amountPence stored as INTEGER (never REAL), toPence() converts Sage SDO floats at bridge boundary
+- [Phase 01]: NodeNext module resolution: all backend TypeScript imports require .js extensions for ESM compatibility
+- [Phase 01]: Manual components.json for monorepo: shadcn CLI placed files in wrong location; moved to client/src/components/ui/ manually
+- [Phase 01]: Explicit routesDirectory in vite.config.ts: TanStack Router plugin defaulted to project root /src/routes; fixed with absolute path
+- [Phase 01]: Vite root set to __dirname: required for build to find index.html when running with --config flag from project root
+- [Phase 01]: tsx --import flag for forking bridge-host.ts in dev/vitest: detects .ts present and .js absent to avoid requiring a build step during development
+- [Phase 01]: company lookup in transactions route: LIST_COMPANIES called to resolve sagePath before READ_TRANSACTIONS, avoids server-side state
+- [Phase 01]: Sorting indicator uses ArrowUp/ArrowDown/ArrowUpDown (lucide) on clickable button inside TableHead for keyboard accessibility
+- [Phase 01]: placeholderData pattern keeps previous page visible during pagination fetch to avoid skeleton flash
+- [Phase 01]: Filter changes reset page to 1 to prevent empty page display when result count drops
 
 ### Pending Todos
 
@@ -60,6 +87,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-17
-Stopped at: Roadmap created and written to disk — ready to plan Phase 1
+Last session: 2026-03-21T16:31:42.190Z
+Stopped at: Checkpoint: Task 3 human-verify in 01-04-PLAN.md
 Resume file: None

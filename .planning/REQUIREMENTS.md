@@ -7,10 +7,10 @@
 
 ### Sage Integration
 
-- [ ] **SAGE-01**: System connects to Sage 50 via official .NET/Interops SDK from the LAN server
-- [ ] **SAGE-02**: System reads transactions, invoices, and bank entries from Sage
+- [x] **SAGE-01**: System connects to Sage 50 via official .NET/Interops SDK from the LAN server
+- [x] **SAGE-02**: System reads transactions, invoices, and bank entries from Sage
 - [ ] **SAGE-03**: System marks confirmed matches as reconciled in Sage via SDK
-- [ ] **SAGE-04**: System supports switching between multiple Sage company datasets (up to ~10)
+- [x] **SAGE-04**: System supports switching between multiple Sage company datasets (up to ~10)
 
 ### Bank Statement Processing
 
@@ -41,7 +41,7 @@
 
 ### Dashboard & UI
 
-- [ ] **DASH-01**: Browser-based UI accessible from any machine on the LAN
+- [x] **DASH-01**: Browser-based UI accessible from any machine on the LAN
 - [ ] **DASH-02**: KPI dashboard showing matched count, unmatched count, and reconciliation progress per company
 - [ ] **DASH-03**: Document archive view of all uploaded invoices, receipts, and statements
 - [ ] **DASH-04**: Visual reconciliation interface for the matching workflow
@@ -83,10 +83,10 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SAGE-01 | Phase 1 | Pending |
-| SAGE-02 | Phase 1 | Pending |
-| SAGE-04 | Phase 1 | Pending |
-| DASH-01 | Phase 1 | Pending |
+| SAGE-01 | Phase 1 | Complete |
+| SAGE-02 | Phase 1 | Complete |
+| SAGE-04 | Phase 1 | Complete |
+| DASH-01 | Phase 1 | Complete |
 | BANK-01 | Phase 2 | Pending |
 | BANK-02 | Phase 2 | Pending |
 | BANK-03 | Phase 2 | Pending |
