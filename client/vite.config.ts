@@ -8,8 +8,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  root: __dirname,
   plugins: [
-    tanstackRouter({ target: 'react', autoCodeSplitting: true }),
+    tanstackRouter({
+      target: 'react',
+      autoCodeSplitting: true,
+      routesDirectory: path.resolve(__dirname, './src/routes'),
+      generatedRouteTree: path.resolve(__dirname, './src/routeTree.gen.ts'),
+    }),
     react(),
   ],
   resolve: {
